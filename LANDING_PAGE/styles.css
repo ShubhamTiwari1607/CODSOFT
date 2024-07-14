@@ -1,0 +1,193 @@
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url(https://www.firefoxbikes.com/on/demandware.static/-/Sites-firefox-navigation/default/dwcda19342/PLPBanner/categoryPLP/ATB/Firefox-All-Terrain.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logoContainer{
+    display: inline;
+    font-family: Roboto,Arial;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left:10%;
+    margin-top: 5%;
+    background-color: black;
+    color:orange;
+}
+
+
+.comment{
+    background-color: silver;
+}
+h5{
+    margin-left: 40%;
+    /* padding-top: 20px; */
+}
+.comment-para{
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom:20px;
+
+}
+.img{
+    margin-left:40%;
+    margin-right:50%;
+    padding-top: 40px;
+}
+@media(max-width:360px){
+    .logo{
+        width:100px;
+    }
+}
+.img2{  
+    height: 100%;
+    background-image: url(./image2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:60%;
+}
+.container{
+    display: inline-flex;
+    gap:1.5%;
+    margin-left: 1.5%;
+    margin-right:1.5%;
+}
+.button{
+    color:white;
+    background-color: black;
+    font-size: medium;
+    font-family: Arial, Times, serif;
+    position: absolute;
+    right:10%;
+    /* top:15% */
+}
+.offer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.imgoffer{
+    position: absolute;
+    left: 20%;
+}
+.imgdiv{
+    display: inline-flex;
+    position: absolute;
+    gap:10%;
+    left:30%;
+    right:30%;
+    justify-items:center;
+}
+.faq{
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: larger;
+    animation: normal;
+    position: absolute;
+    top:290%;
+    
+    /* left:6%; */
+}
+.sectitle{
+    font-size: 4rem;
+}
+.typ-1{
+    position: relative;
+    margin-left: 3%;
+}
+.typ-2{
+    position: relative;
+    z-index: -1;
+    margin-left: 3%;
+    display: block;
+    opacity: 0.6;
+    
+
+}
+
+/*Accordion*/
+.accordion{
+    max-width: 1300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Arial;
+    background-color: aliceblue;
+}
+.accordion__label,
+.accordion__content{
+    padding: 14px 20px;
+}
+
+.accordion__label{
+    display: block;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.5s;
+}
+
+.accordion__label:hover {
+    background:rgba(0,0,0,0.1);
+}
+
+.accordion__label::after{
+    content:" ";
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:20px;
+    width:12px;
+    height:6px;
+    background-image: url('data:image/svg+xml,<svg height="50" width="100" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0,100,0 50,50" style="color:black" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content{
+    background: white;
+    line-height: 1.6;
+    font-size:0.85em;
+    display: none;
+}
+.accordion__input{
+    display: none;
+}
+.accordion__input:checked~.accordion__content{
+    display: block;
+}
+.accordion__input:checked~.accordion__label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+.hover:hover{
+   color: orange ;
+   cursor: pointer;
+}
+
+.footer{
+    font-family: Arial;
+    color:white;
+    line-height: 20px;
+    background-color: black;
+    position: absolute;
+    right: 10px;
+    display: inline-flex;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 50px;
+}
+footer:hover{
+    cursor: pointer;
+}
